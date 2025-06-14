@@ -1,4 +1,10 @@
-# EnsetApp
+# Angular App
+Ce projet est une application web développée avec Angular 20 pour le front-end. L’objectif principal était d’explorer les bases d’Angular, notamment la création de composants, l’utilisation du système de routing pour naviguer entre différentes pages, ainsi que la communication avec une API REST. Les données sont récupérées depuis le back-end Spring à l’aide du module HttpClient. Le projet permet par exemple d’afficher une liste d’éléments provenant d'une base de données.
+
+https://github.com/user-attachments/assets/226bf00f-94b7-4bed-bec4-5c84ef8e13f1
+
+
+
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
 
