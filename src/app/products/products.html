@@ -1,0 +1,42 @@
+<div class="p-3">
+  <div class="card-body">
+    <h3>Products Component</h3>
+  </div>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Selected</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    @if (products){
+
+    <tbody>
+      @for ( p of products ; track p.id) {
+
+
+
+      <tr  >
+        <td>{{p.id}}</td>
+        <td>{{p.name}}</td>
+        <td>{{p.price}}</td>
+
+
+    <td>
+      <i [ngClass]="p.selected ? 'bi bi-check-circle-fill' : 'bi bi-circle'"  (click)="handleSelectOrDeselect(p.id)"> </i>
+    </td>
+        <td>
+          <button class="btn btn-danger" (click)="handleDeleteProduct(p.id)">
+
+          <i class="bi bi-trash "></i>
+          </button>
+        </td>
+      </tr>
+      }
+    </tbody>
+    }
+  </table>
+</div>
